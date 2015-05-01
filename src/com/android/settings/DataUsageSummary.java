@@ -784,8 +784,8 @@ public class DataUsageSummary extends HighlightingFragment implements Indexable 
             // catch any other merged subscribers.
             mTemplate = buildTemplateMobileAll(
                     getActiveSubscriberId(context, getSubId(currentTab)));
-            mTemplate = NetworkTemplate.normalize(mTemplate,
-                    mTelephonyManager.getMergedSubscriberIds());
+            //mTemplate = NetworkTemplate.normalize(mTemplate,
+            //        mTelephonyManager.getMergedSubscriberIds());
 
         } else if (TAB_3G.equals(currentTab)) {
             if (LOGD) Log.d(TAG, "updateBody() 3g tab");
